@@ -2,7 +2,7 @@ import { Controller, Post, Body, UseInterceptors, UploadedFile, HttpCode } from 
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { FIVE_MB, imageFilePipe } from 'src/common/pipes/images.pipes';
+import { FIVE_MB, imageFilePipe } from '../common/pipes/images.pipes';
 
 
 @Controller('users')
